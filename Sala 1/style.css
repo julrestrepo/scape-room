@@ -64,7 +64,7 @@ body, html{
 }
 
 .oculto{
-  display: none;
+  display: none !important;
 }
 
 .presionado{

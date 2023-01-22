@@ -1,5 +1,5 @@
 const celda = document.querySelector('.celda')
-const saliste = document.querySelector('.saliste')
+const fin = document.querySelector('.fin')
 const botonSalida = document.querySelector('.salida .boton')
 const tablero = document.querySelector('.tablero')
 botonSalida.addEventListener('click', () => {
@@ -18,7 +18,7 @@ botonTablero.addEventListener('click', () => {
   if(intentos < 3){
     if(n1.value == 7 && n2.value == 30 && n3.value == 23){
       setTimeout(() => celda.classList.add('oculto'), 100)
-      setTimeout(() => saliste.classList.remove('oculto'), 100)
+      setTimeout(() => fin.classList.remove('oculto'), 100)
     }else{
       window.localStorage.setItem(val, intentos + 1)
       alert(`Fallaste, te quedan ${3 - (intentos + 1)} intentos`)

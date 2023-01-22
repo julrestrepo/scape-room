@@ -1,0 +1,186 @@
+body, html{
+  width: 1200px;
+  height: 900px;
+  padding: 0;
+  margin: 0;
+  font-family: arial;
+  font-weight: bold;
+}
+
+.celda{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url(fondo.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.salida{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 300px;
+  left: 500px;
+  border-radius: 100%;
+  cursor: pointer;
+  background: #909090;
+}
+
+.boton{
+  width: 100%;
+  height: 100%;
+}
+
+.ocultar{
+  opacity: 60%;
+}
+
+.oculto{
+  display: none !important;
+}
+
+.tablero{
+  position: absolute;
+  background: gray;
+  padding: 20px;
+  top: 360px;
+  left: 416px;
+}
+
+.tablero input[type="text"]{
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+}
+
+.tablero .button{
+  padding: 5px;
+  margin-top: 10px;
+  text-align: center;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.fin{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+}
+
+.azul{
+  width: 100%;
+  height: 100%;
+  background: blue;
+  position: absolute;
+  opacity: .5;
+  color: white;
+  font-size: 32px;
+}
+
+.azul .numero1{
+  position: absolute;
+  top: 37px;
+  left: 750px;
+}
+
+.azul .numero2{
+  top: 687px;
+  left: 828px;
+  position: absolute;
+  transform: skewX(35deg);
+}
+
+.azul .numero3{
+  top: 380px;
+  left: 120px;
+  position: absolute;
+  transform: skewY(-3deg);
+}
+
+.rojo{
+  width: 100%;
+  height: 100%;
+  background: red;
+  position: absolute;
+  opacity: .5;
+  color: white;
+  font-size: 32px;
+}
+
+.rojo .numero1{
+  position: absolute;
+  top: 37px;
+  left: 711px;
+}
+
+.rojo .numero2{
+  top: 687px;
+  left: 881px;
+  position: absolute;
+  transform: skewX(35deg);
+}
+
+.rojo .numero3{
+  top: 383px;
+  left: 60px;
+  position: absolute;
+  transform: skewY(-3deg);
+}
+
+.verde{
+  width: 100%;
+  height: 100%;
+  background: green;
+  position: absolute;
+  opacity: .5;
+  color: white;
+  font-size: 32px;
+}
+
+.verde .numeros{
+  position: absolute;
+  top: 784px;
+  left: 464px;
+  transform: skewX(-26deg);
+}
+
+.accion{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 300px;
+  left: 440px;
+  border-radius: 100%;
+  cursor: pointer;
+  background: #909090;
+}
+
+.accion.azul, .accion.azul img{
+  background: blue;
+  opacity: .5;
+  border-radius: 100%;
+}
+
+.accion.rojo, .accion.rojo img{
+  background: red;
+  opacity: .5;
+  border-radius: 100%;
+}
+
+.accion.verde, .accion.verde img{
+  background: green;
+  opacity: .5;
+  border-radius: 100%;
+}
+
+.boton{
+  width: 100%;
+  height: 100%;
+}
