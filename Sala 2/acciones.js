@@ -1,5 +1,6 @@
 const celda = document.querySelector('.celda')
 const fin = document.querySelector('.fin')
+const salida = document.querySelector('.salida')
 const botonSalida = document.querySelector('.salida .boton')
 const tablero = document.querySelector('.tablero')
 botonSalida.addEventListener('click', () => {
@@ -47,6 +48,9 @@ botonAccion.addEventListener('click', () => {
     setTimeout(() => rojo.classList.add('oculto'), 100)
     setTimeout(() => azul.classList.remove('oculto'), 100)
     setTimeout(() => verde.classList.add('oculto'), 100)
+    setTimeout(() => salida.classList.add('azulada'), 100)
+    setTimeout(() => salida.classList.remove('rojiza'), 100)
+    setTimeout(() => salida.classList.remove('verdoza'), 100)
     acciones = 1;
   }else if (acciones === 1){
     setTimeout(() => accion.classList.add('rojo'), 100)
@@ -55,6 +59,9 @@ botonAccion.addEventListener('click', () => {
     setTimeout(() => rojo.classList.remove('oculto'), 100)
     setTimeout(() => azul.classList.add('oculto'), 100)
     setTimeout(() => verde.classList.add('oculto'), 100)
+    setTimeout(() => salida.classList.remove('azulada'), 100)
+    setTimeout(() => salida.classList.add('rojiza'), 100)
+    setTimeout(() => salida.classList.remove('verdoza'), 100)
     acciones = 2
   }else if (acciones === 2){
     setTimeout(() => accion.classList.remove('rojo'), 100)
@@ -63,6 +70,9 @@ botonAccion.addEventListener('click', () => {
     setTimeout(() => rojo.classList.add('oculto'), 100)
     setTimeout(() => azul.classList.add('oculto'), 100)
     setTimeout(() => verde.classList.remove('oculto'), 100)
+    setTimeout(() => salida.classList.remove('azulada'), 100)
+    setTimeout(() => salida.classList.remove('rojiza'), 100)
+    setTimeout(() => salida.classList.add('verdoza'), 100)
     acciones = 3
   }else if (acciones === 3){
     setTimeout(() => accion.classList.remove('rojo'), 100)
@@ -71,6 +81,9 @@ botonAccion.addEventListener('click', () => {
     setTimeout(() => rojo.classList.add('oculto'), 100)
     setTimeout(() => azul.classList.add('oculto'), 100)
     setTimeout(() => verde.classList.add('oculto'), 100)
+    setTimeout(() => salida.classList.remove('azulada'), 100)
+    setTimeout(() => salida.classList.remove('rojiza'), 100)
+    setTimeout(() => salida.classList.remove('verdoza'), 100)
     acciones = 0
   }
 })
