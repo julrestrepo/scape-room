@@ -18,7 +18,7 @@ botonTablero.addEventListener('click', () => {
   const val = 'intentos'
   let intentos = parseInt(window.localStorage.getItem(val), 10) || 0
   if(intentos < 3){
-    if(n1.value == 99 && n2.value == 5 && n3.value == 76){
+    if(n1.value == 99 && n2.value == 76 && n3.value == 5){
       setTimeout(() => puerta.classList.add('abierta'), 100)
     }else{
       window.localStorage.setItem(val, intentos + 1)
